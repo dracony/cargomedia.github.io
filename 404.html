@@ -3,10 +3,25 @@ layout: default
 title: 404
 ---
 
-<div class="wallpaper">
-	<h1 class="headline">404</h1>
-	<p class="catchphrase">Never gonna give you up</p>
+<div class="wallpaper animate404">
+	<div id="animate404">
+		<canvas>
+			<h1 class="headline">404</h1>
+			<p class="catchphrase">Never gonna give you up</p>
+		</canvas>
+	</div>
+	
+	<script src="./404/animate404.js"></script>
+	<link rel="stylesheet" href="./404/animate404.css"/>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			var animate404 = new Animate404(document.getElementById('animate404'), 8, 500);
+		});
+	</script>
+	
 </div>
+
 <div class="rainbow">
 	<div class="rainbow-stripe blue">&nbsp;</div>
 	<div class="rainbow-stripe green">&nbsp;</div>
